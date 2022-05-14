@@ -12,11 +12,12 @@ int main()
                   "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                   "0123456789"
                   "~!`@#$%^()[]|{};:&=-_+,./<>?";
-    int i = 1;
-    for (i <= 12; i++){
+
+    for (int i = 1; i <= 12; i++)
+    {
         pass = pass + data[rand() % 93];
     }
-    count<<"password: "<<pass;
+    cout<<"password: "<<pass;
 
     return 0;
 
